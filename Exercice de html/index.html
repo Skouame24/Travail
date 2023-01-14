@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="index.js" ></script>
+    <title>Formulaire</title>
+</head>
+<body>
+     <div class="contenu">
+        <div class="titre">Eglise annexe</div>
+        <form id="form" onsubmit="validateForm()" autocomplete="off">
+            <div class="utilisateur">
+                <div class="box">
+                    <span class="details">Identifiant</span>
+                    <input type="text " placeholder="entrer votre identifiant" id="iD">
+                </div>
+                <div class="box">
+                    <span class="details">Nom</span>
+                    <input type="text " placeholder=" entrer votre Nom" id="nom">
+                </div>
+                <div class="box">
+                    <span class="details">Pays</span>
+                    <input type="text" placeholder="Cote D'ivoire" id="pays">
+                </div>
+                <div class="box">
+                    <span class="details">Ville</span>
+                    <input type="text " placeholder="Abidjan" id="ville">
+                </div>
+                <div class="box">
+                    <span class="details">Commune</span>
+                    <input type="text " placeholder="Treichville" id="commune">
+                </div>
+                <div class="box">
+                    <span class="details">Quartier</span>
+                    <input type="text " placeholder="Arras3" id="quartier">
+                </div>
+                <div class="box">
+                    <span class="details">Nom du Pasteur</span>
+                    <input type="text " placeholder="Entrer le nom du pasteur principale" id="nom du quartier" >
+                </div>
+            </div> 
+            <div class="bouton">
+                <input type="submit" value="Register">
+            </div>   
+        </form>
+       </div>
+     </div>
+</body>
+</html>

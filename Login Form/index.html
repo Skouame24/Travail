@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="moon.png" class="image">
+        <h1>Login here</h1>
+        <form  id="form" onsubmit="validateForm()" autocomplete="off">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username or Email " id="username" >
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter your password" id="password" >
+            <input type="submit" name="" value="Login">
+            <a href="#">Lost your password</a><br>
+            <a href="#">Don't have an account</a>
+        </form>
+        <script>
+            function validateForm(){
+                let username = document.getElementById("username");
+                if(username.value == ""){
+                    alert("Champ vide !!!");
+                }
+                let password = document.getElementById("password");
+                if(password.value == ""){
+                    alert("Veuillez entrer votre mot de passe svp!!!");
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
